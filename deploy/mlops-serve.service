@@ -1,0 +1,16 @@
+[Unit]
+Description=MLOps Model Inference Server (FastAPI)
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+Environment="CLOUD_PROVIDER=aws"
+Environment="CLOUD_BUCKET=your-bucket-name"
+Environment="AWS_DEFAULT_REGION=us-east-1"
+ExecStart=/usr/bin/python3 /home/ubuntu/src/serve.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

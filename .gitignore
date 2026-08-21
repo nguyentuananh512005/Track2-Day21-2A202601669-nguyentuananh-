@@ -1,13 +1,21 @@
+# MLflow & Training Artifacts
 mlflow.db
+mlruns/
 mlartifacts/
 models/
 outputs/
+
+# Large Raw Data files (tracked by DVC)
 data/train_phase1.csv
 data/eval.csv
 data/train_phase2.csv
+data/*.csv
+
+# Python & Environment
 sa-key.json
 .env
 .venv/
 __pycache__/
 *.pyc
+.pytest_cache/
 .DS_Store

@@ -1,0 +1,5 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = gs://mlops-wine-bucket-2a202601669/dvc
+    credentialpath = sa-key.json

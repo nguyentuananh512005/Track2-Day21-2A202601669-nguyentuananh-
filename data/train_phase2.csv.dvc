@@ -1,0 +1,6 @@
+outs:
+- hash: md5
+  md5: fd073d6651b2ff224c0da1eb1c049a32
+  path: train_phase2.csv
+  size: 184134
+schema: '2.0'
